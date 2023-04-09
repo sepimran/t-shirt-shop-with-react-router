@@ -1,0 +1,37 @@
+header.header-area {
+    background:#F7F8FC;
+    padding: 17px;
+}
+
+.logo-area {
+    width: 25%;
+}
+
+.logo-area img{
+    max-width: 120px;
+}
+
+.main-menu {
+    width: 75%;
+}
+
+.main-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.main-menu ul li {
+    display: inline-block;
+}
+
+.main-menu ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 30px;
+}
+
+header.header-area .row {
+    align-items: center;
+}
