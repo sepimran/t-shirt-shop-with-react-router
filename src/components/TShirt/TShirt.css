@@ -1,0 +1,60 @@
+section.heading h2 {
+    font-size: 42px;
+    text-align: center;
+}
+
+section.heading {
+    padding: 60px;
+    padding-bottom: 30px;
+}
+
+.single-tShirt-item {
+    border: 2px solid #157CCA;
+    border-radius: 15px;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+
+.all-tshirt-aera .row {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+}
+
+section.heading h2 {
+    font-size: 42px;
+    text-align: center;
+}
+
+section.heading {
+    padding: 60px;
+    padding-bottom: 30px;
+}
+
+.single-tShirt-item {
+    border: 2px solid #157CCA;
+    border-radius: 15px;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+
+.all-tshirt-aera .row {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+}
+
+.single-tShirt-item img {
+    max-height: 220px;
+    margin-bottom: 20px;
+}
+
+.single-tShirt-item h4 {
+    margin-top: 10px;
+}
+
+.single-tShirt-item h4 span {
+    color: #1480CC;
+}

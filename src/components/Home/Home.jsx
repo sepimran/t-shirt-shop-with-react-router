@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../Header/Header';
 import { Outlet, useLoaderData } from 'react-router-dom';
+import TShirt from '../TShirt/TShirt';
 
 const Home = () => {
     const tShirts = useLoaderData();
@@ -8,13 +9,24 @@ const Home = () => {
     return (
         <div>
             <section className="heading">
-                <h2>All Tshirt</h2>
+                <div className="container">
+                    <h2>All Tshirt</h2>
+                </div>
             </section>
             <div className="all-tshirt-aera">
-                <div className="row">
-                    {
-                        tShirts.map(tShirt => console.log(tShirt))
-                    }
+                <div className="container">
+                    <div className="row">
+                        {
+                            tShirts.map(tShirt => console.log(tShirt))
+                        }
+                        {
+                            tShirts.map(tShirt => 
+                            <TShirt 
+                                key={TShirt._id}
+                                tShirt={tShirt}
+                            ></TShirt>)
+                        }
+                    </div>
                 </div>
             </div>
         </div>

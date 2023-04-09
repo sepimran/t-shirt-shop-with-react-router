@@ -30,3 +30,90 @@ section.breadcrumb-area h1 {
   width: 100%;
   font-size: 62px;
 }
+
+img{
+  max-width: 100%
+
+}
+
+section.heading h2 {
+    font-size: 42px;
+    text-align: center;
+}
+
+section.heading {
+    padding: 60px;
+    padding-bottom: 30px;
+}
+
+.single-tShirt-item {
+    border: 2px solid #157CCA;
+    border-radius: 15px;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+
+.all-tshirt-aera .row {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+}
+
+.single-tShirt-item img {
+    max-height: 220px;
+    margin-bottom: 20px;
+}
+
+section.heading h2 {
+    font-size: 42px;
+    text-align: center;
+}
+
+section.heading {
+    padding: 60px;
+    padding-bottom: 30px;
+}
+
+.single-tShirt-item {
+    border: 2px solid #157CCA;
+    border-radius: 15px;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+
+.all-tshirt-aera .row {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+}
+
+.single-tShirt-item img {
+    max-height: 220px;
+    margin-bottom: 20px;
+}
+
+.single-tShirt-item h4 {
+    margin-top: 10px;
+}
+
+.single-tShirt-item h4 span {
+    color: #1480CC;
+}
+
+.single-tShirt-item button {
+    background: #1285D0;
+    border: 0;
+    padding: 13px 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 700;
+    color: #fff;
+    transition: .3s all;
+}
+
+.single-tShirt-item button:hover {
+    background: #0c70b1;
+    border: 0;
+}
