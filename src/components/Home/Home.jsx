@@ -1,10 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../Header/Header';
 import { Outlet, useLoaderData } from 'react-router-dom';
 import TShirt from '../TShirt/TShirt';
+import Cart from '../Cart/Cart';
+import toast from 'react-hot-toast';
 
 const Home = () => {
     const tShirts = useLoaderData();
+    const [cart , setCart] = useState([]);
+    
+    const handleAddToCart = (tShirt) =>{
+        const exit = cart.find(tshirt => tshirt._id === tShirt._id);
+        if(exit){
+            toast('This T-Shirt is already added in cart');
+        }else{
+            const newCart = [...cart ,tShirt];
+            setCart(newCart)
+        }
+       
+    }
+
+    const handleRemoveFromCart = (id) =>{
+        const remainCart = cart.filter(tShirt => tShirt._id !== id);
+        setCart(remainCart)
+    }
     
     return (
         <div>
@@ -16,16 +35,24 @@ const Home = () => {
             <div className="all-tshirt-aera">
                 <div className="container">
                     <div className="row">
-                        {
-                            tShirts.map(tShirt => console.log(tShirt))
-                        }
-                        {
-                            tShirts.map(tShirt => 
-                            <TShirt 
-                                key={TShirt._id}
-                                tShirt={tShirt}
-                            ></TShirt>)
-                        }
+                        <div className="tshirt-col">
+                            {
+                                tShirts.map(tShirt => 
+                                <TShirt 
+                                    key={tShirt._id}
+                                    tShirt={tShirt}
+                                    handleAddToCart={handleAddToCart}
+                                ></TShirt>)
+                            }
+                        </div>
+                        <div className="cart-col">
+                           <Cart 
+                            cart={cart}
+                            handleRemoveFromCart={handleRemoveFromCart}
+                           >
+
+                           </Cart>
+                        </div>
                     </div>
                 </div>
             </div>

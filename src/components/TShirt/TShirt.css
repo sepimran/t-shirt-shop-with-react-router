@@ -16,12 +16,6 @@ section.heading {
     text-align: center;
 }
 
-.all-tshirt-aera .row {
-    gap: 30px;
-    display: grid;
-    grid-template-columns: repeat(3 , 1fr);
-}
-
 section.heading h2 {
     font-size: 42px;
     text-align: center;
@@ -40,7 +34,7 @@ section.heading {
     text-align: center;
 }
 
-.all-tshirt-aera .row {
+.all-tshirt-aera .row .tshirt-col {
     gap: 20px;
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
@@ -57,4 +51,34 @@ section.heading {
 
 .single-tShirt-item h4 span {
     color: #1480CC;
+}
+
+.all-tshirt-aera .row .tshirt-col {
+    width: 70%;
+}
+
+.all-tshirt-aera .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0
+}
+
+.all-tshirt-aera .row .cart-col {
+    width: 30%;
+    padding-left: 30px;
+}
+
+.cart-area {
+    background: #90cfff;
+    padding: 30px;
+    padding-top: 10px;
+    border-radius: 15px;
+    position: sticky;
+    top: 0;
+}
+
+.cart-area h3 {
+    font-size: 24px;
+    line-height: 2.5;
+    border-bottom: 2px dashed #0652a1;
 }
